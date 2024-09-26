@@ -167,75 +167,26 @@
                 </div>
             </div>
             <!--Main Content-->
-            <div class="col s8" style="width: 55rem; margin-inline: auto; margin-left: 380px;">
-                <div class="card-img"
-                    style="height: 600px; width: 100%; margin-left:-47px; margin-top: 20px; background-color: #690808f6; box-shadow: 1px 5px 9px 1px rgba(101,18,45,0.45); border-radius: 5px; padding: 15px; top: 50;">
-                    <div class="carousel carousel-slider center" style="width:700px; margin-left:33px; height: 100%;">
-                        <div class="carousel-item">
-                            <img src="assets/slide1.jpg" style=" border-radius: 15px;" alt="Announcement 1">
+            <div class="col s7 center-align" style="margin-inline: auto; margin-left: 350px; margin-right: auto;">
+                <div class="card-img center-align"
+                    style="height: 600px; width: 100%; background-color: #4d0000; box-shadow: 1px 5px 9px 1px rgba(101,18,45,0.45); border-radius: 5px; padding: 15px; margin-top: 20px;">
+                    <div class="carousel carousel-slider center" style="width:700px; margin: 0 auto; height: 100%;">
+                        <div class="carousel-item center">
+                            <img src="assets/slide1.jpg" style="border-radius: 15px; width: 100%;" alt="Announcement 1">
                         </div>
                         <div class="carousel-item">
-                            <img src="assets/slide2.png" alt="Announcement 2">
+                            <img src="assets/slide2.png" style="width: 100%;" alt="Announcement 2">
                         </div>
                         <div class="carousel-item">
-                            <img src="assets/slide3.png" alt="Announcement 3">
+                            <img src="assets/slide3.png" style="width: 100%;" alt="Announcement 3">
                         </div>
                     </div>
                 </div>
 
-                <div class="col s2 right" style="width: 45vh; margin-top: -537px; margin-right: -330px;">
-                    <div class="card-panel white"
-                        style="height: 250px; box-shadow: 1px 5px 9px 1px rgba(101,18,45,0.45); float: right;">
-                        <div class="plus-sign-container center-align">
-                            <!-- Add Button (Plus Sign) at the top -->
-                            <a class="btn-floating" onclick="openModal()" style="background-color: #4d0000;">
-                                <i class="material-icons" style="font-size: 25px; margin-top: -5px;">add</i>
-                            </a>
-                        </div>
-                        <h6 class="center-align"
-                            style="color: #4d0000; font-weight: bold; margin-top: -23px; margin-left: -130px;">ACTIVITY
-                            LIST:</h6>
-                        <br>
-                        <div class="divider"></div>
-
-                        <ul class="activity" style="background-color: #4d00003f;">
-                            <li>Activity 1</li>
-                            <div class="divider"></div>
-                            <li>Activity 2</li>
-                            <div class="divider"></div>
-                            <li>Activity 3</li>
-                            <div class="divider"></div>
-                        </ul>
-                    </div>
-
-                    <div class="calendar" id="calendar">
-                        <div class="calendar-header">
-                            <span id="calendar-month-year"></span>
-                        </div>
-                        <div class="calendar-body" id="calendar-body">
-
-                        </div>
-                    </div>
-
-                    <div id="activity-modal" class="modal"
-                        style="width: 400px; height: 180px; margin-top: 250px; float: right;">
-                        <div class="modal-content">
-                            <h4 style="font-size: 20px;">Add new activity</h4>
-                            <div class="input-field">
-                                <input type="text" id="modal-activity" placeholder="Enter your activity" />
-                            </div>
-                        </div>
-                        <div class="modal-footer" style="margin-top: -40px;">
-                            <a href="#!" class="modal-close btn-flat"
-                                style="color: white; background-color: #4d0000; margin-right: 10px;"
-                                onclick="addActivity()">Add</a>
-                        </div>
-                    </div>
-                </div>
                 <br>
 
                 <div class="box"
-                    style=" background-color: #4d0000;  height: 48vh; width: 1165px; margin-top: 100px; margin-left:60px; border-radius: 7px; ">
+                    style=" background-color: #4d0000;  height: 48vh; width: 1165px; margin-top: 100px; border-radius: 7px; ">
                     <div class="slider-container"
                         style=" padding-top: 13px; padding-bottom: 5px margin; margin-left: 2px; padding-left: 10px; padding-right: 60px;">
                         <div class="slider">
@@ -289,7 +240,7 @@
 
                 <BR><BR></BR></BR>
 
-                <div class="main-layout">
+                <div class="main-layout" style="padding-left: 0;">
                     <div class="section catalog"
                         style="border: 5px solid #4d0000; height: 35vh; overflow-y: scroll;  overflow-x: hidden; background-color: #e7d9d9;">
                         <h2 style="background-color: #4d0000; width: 380px;">Catalog Overview</h2>
@@ -341,6 +292,56 @@
                     </div>
                 </div>
 
+            </div>
+
+            <div class="col s2 right" style=" margin-right: 20px; margin-top: 12px;">
+                <div class="card-panel white"
+                    style="height: 250px; box-shadow: 1px 5px 9px 1px rgba(101,18,45,0.45); float: right;">
+                    <div class="plus-sign-container center-align">
+                        <!-- Add Button (Plus Sign) at the top -->
+                        <a class="btn-floating" onclick="openModal()" style="background-color: #4d0000;">
+                            <i class="material-icons" style="font-size: 25px; margin-top: -5px;">add</i>
+                        </a>
+                    </div>
+                    <h6 class="center-align"
+                        style="color: #4d0000; font-weight: bold; margin-top: -23px; margin-left: -130px;">ACTIVITY
+                        LIST:</h6>
+                    <br>
+                    <div class="divider"></div>
+
+                    <ul class="activity" style="background-color: #4d00003f;">
+                        <li>Activity 1</li>
+                        <div class="divider"></div>
+                        <li>Activity 2</li>
+                        <div class="divider"></div>
+                        <li>Activity 3</li>
+                        <div class="divider"></div>
+                    </ul>
+                </div>
+
+                <div class="calendar" id="calendar">
+                    <div class="calendar-header">
+                        <span id="calendar-month-year"></span>
+                    </div>
+                    <div class="calendar-body" id="calendar-body">
+
+                    </div>
+                </div>
+
+                <div id="activity-modal" class="modal"
+                    style="width: 400px; height: 180px; margin-top: 250px; float: right;">
+                    <div class="modal-content">
+                        <h4 style="font-size: 20px;">Add new activity</h4>
+                        <div class="input-field">
+                            <input type="text" id="modal-activity" placeholder="Enter your activity" />
+                        </div>
+                    </div>
+                    <div class="modal-footer" style="margin-top: -40px;">
+                        <a href="#!" class="modal-close btn-flat"
+                            style="color: white; background-color: #4d0000; margin-right: 10px;"
+                            onclick="addActivity()">Add</a>
+                    </div>
+                </div>
             </div>
 
             <!--Footer-->
